@@ -1,0 +1,119 @@
+{
+    "chips": {
+        "name": "chips",
+        "items":[
+           {
+                "id": "Piattos",
+                "brand": "Jack'n Jill",
+                "flavor": "Cheese",
+                "volume": 40,
+                "manufacturer": "Universal Robina Corporation (URC)",
+                "price": 15.00
+           },
+           {
+                "id": "Chicharron ni Mang Juan",
+                "brand": "Jack'n Jill",
+                "flavor": "Cheese",
+                "volume": 26,
+                "manufacturer": "Universal Robina Corporation (URC)",
+                "price": 10.00
+           }
+        ]
+    },
+    "water_bottle": {
+        "name" : "water_bottle",
+        "items": [
+            {
+                "id": "Distilled Drinking Water",
+                "brand": "Nature's Spring",
+                "volume": 500,
+                "volume-type": "g",
+                "type": "water",
+                "manufacturer": "Philippine Spring Water Resources, inc",
+                "price": 10.35
+            },
+            {
+                "id": "Distilled Drinking Water",
+                "brand": "Nature's Spring",
+                "volume": 1000,
+                "volume-type": "g",
+                "type": "water",
+                "manufacturer": "Philippine Spring Water Resources, inc",
+                "price": 26.66
+            },
+            {
+                "id": "Natures Spring Drinking Water",
+                "brand": "Nature's Spring",
+                "volume": 1000,
+                "volume-type": "g",
+                "type": "water",
+                "manufacturer": "Philippine Spring Water Resources, inc",
+                "price": 26.66
+            }
+        ]
+    },
+    "canned-goods": {
+        "name": "canned-goods",
+        "items": [
+            {
+                "id": "Home-Style Corned Beef",
+                "brand": "CDO",
+                "volume": 260,
+                "volume-type": "g",
+                "type": "Corned Beef",
+                "manufacturer": "Philippine Spring Water Resources, inc",
+                "price": 57.50
+            },
+            {
+                "id": "Nutri-meats",
+                "brand": "STAR",
+                "volume": 160,
+                "volume-type": "g",
+                "type": "Corned Beef",
+                "manufacturer": "The Purefoods-Hormel Company, inc",
+                "price": 38.50
+            }
+        ]
+    },
+    "juice":{
+        "name": "juice",
+        "items": [
+            {
+                "id": "Fresh Mango Juice Drinks",
+                "brand": "Minute Maid",
+                "flavor" : "Mango",
+                "volume": 180,
+                "volume-type": "g",
+                "type": "Juice",
+                "manufacturer": "Coca-Cola Beverages Philippines, Inc",
+                "price": 14.00
+            },
+            {
+                "id": "100% Pineapple Juice Fiber Enriched",
+                "brand": "Del Monte",
+                "flavor" : "Pineapple",
+                "volume": 220,
+                "volume-type": "g",
+                "type": "Juice",
+                "manufacturer": null,
+                "price": 34.00
+            }
+        ]
+    },
+    "ketchup":{
+        "name": "ketchup",
+        "items":[
+            {
+                "id": "Banana Ketchup Regular",
+                "brand": "Papa",
+                "flavor" : "Banana",
+                "volume": 550,
+                "volume-type": "g",
+                "type": "Ketchup",
+                "manufacturer": "Nutri Asia",
+                "price": 43.00,
+                "photo": "../item_imgs/Papa_Banana_Ketchup_Regular_550g.jpg" 
+            }
+        ]
+    }
+}

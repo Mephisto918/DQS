@@ -1,0 +1,216 @@
+@import url(../../style.css);
+
+
+:root{
+    --uni-padding: 1 0px;
+}
+
+#cart > main > section > hr, #cart > main > aside > hr, #cart > main > aside > #checkout > hr{
+    background-color: var(--secondary);
+    width: 100%;
+    border: 2px double var(--secondary);
+    margin: 10px 0px;
+}
+hr{
+    background-color: var(--secondary);
+    width: 100%;
+    border: 2px double var(--secondary);
+    margin: 10px 0px;
+}
+
+#cart > main{
+    background-color: var(--primary);
+    height: 600px;
+    width: 700px;
+    padding: 20px;
+    position: relative;
+
+
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: 15% 1fr;
+    gap: 20px;
+
+    font-size: 11pt;
+    font-family: 'ubuntu-medium';
+}
+#cart > main > nav{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: var(--primary);
+    border: 3px solid var(--secondary);
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+#cart > main > nav > button{
+    margin-left: 0;
+    height: 70%;
+    width: 10%;
+    background-color: transparent;
+    border: none;
+    font-family: 'ubuntu-bold';
+    color: var(--secondary);
+    font-size: 40pt;
+}
+#cart > main > nav>h1, main > nav > #support{
+    margin-left: auto;
+}
+#support{
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    fill: var(--secondary);
+    z-index: 10;
+}
+#cart > main > section{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    max-height: 100%;
+}
+#cart > main > section > #container-cart{
+    border: 1px solid var(--secondary);
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: -5px 7px 11px 1px var(--hard-shadow);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex-grow: 1;
+    position: relative;
+}
+#cart > main > section > #container-cart::before {
+    content: "";
+    position: absolute;
+    top: -5px; /* adjust this value to position the shadow vertically */
+    left: -5px; /* adjust this value to position the shadow horizontally */
+    right: -5px;
+    bottom: -5px;
+    z-index: -1; /* place the shadow behind the container content */
+    box-shadow: -5px 7px 11px 1px var(--hard-shadow);
+}
+
+#cart > main > aside{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+
+}
+#cart > main > aside > h1{
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+#cart > main > aside > #info-con{
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    height: 60%;
+    width: 100%;
+    box-shadow: -5px 7px 11px 1px var(--hard-shadow);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+#cart > main > aside > #info-con > img{
+    width: 100%;
+    height: 125px;
+    object-fit: contain;
+    background-color: white;
+}
+#cart > main > aside > #checkout{
+    border-radius: 10px;
+    height: 25%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: var(--uni-padding);
+    margin-top: auto;
+}
+#checkout > #total-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#checkout > #total-sec>span{
+    margin-left: auto;
+}
+#checkout > a{
+    margin-top: auto;
+    margin-bottom: 10px;
+
+    display: block;
+    width: 50%;
+    height: 30px;
+    background-color: transparent;
+    color: var(--secondary);
+    text-decoration: none;
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    display: grid;
+    place-items: center;
+    box-shadow: -5px 7px 11px 1px var(--hard-shadow);
+}
+#checkout > a:hover{
+    margin-top: auto;
+    margin-bottom: 10px;
+
+    display: block;
+    width: 50%;
+    height: 30px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    text-decoration: none;
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    display: grid;
+    place-items: center;
+    box-shadow: -5px 7px 11px 1px var(--hard-shadow);
+}
+#info-con > h4 > span{
+    font-family: 'ubuntu-light';
+    font-size: 9pt;
+    text-shadow: -1px 2px 4px var(--hard-shadow);
+}
+
+.item-category{
+    font-size: 0pt;
+}
+
+/* ----------logo-------------- */
+nav > h1 > .dqs-logo{
+    width: 80px;
+    aspect-ratio: 1;
+    position: relative;
+    top: auto;
+    left: auto;
+}
+.dqs-logo > svg {
+    filter: drop-shadow(-7px 6px 2px rgb(47, 33, 33))
+}
+.dqs-logo > svg > path{
+    box-shadow: 5px 7px 11px 1px var(--hard-shadow);
+}
+.dqs-logo > svg > .dqs-color{
+    fill: var(--text-light);
+}
+
+/* ----------logo-------------- */
+

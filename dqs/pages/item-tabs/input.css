@@ -1,0 +1,65 @@
+#dev-tool{
+    border: 1px solid transparent;
+    border-radius: 15px;
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--primary);
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+#dev-tool:hover{
+    border: 1px solid var(--primary-dark);
+    border-radius: 15px;
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--secondary-dark);
+}
+#dev-tool > svg{
+    height: 80%;
+    width: 80%;
+    fill: var(--secondary);
+}
+
+
+#input{
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    height: 400px;
+    width: 200px;
+    background-color: rgba(244, 50, 50, 0.387);
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    border-radius: 10px;
+}
+#input > form{
+    border: 1px solid rgb(77, 74, 74);
+}
+#input > #sample-items-section{
+    flex-grow: 1;
+    border: 1px solid rgb(80, 79, 79);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.sample-item{
+    height: 50px;
+    min-height: 2rem;
+    font-size: 5pt;
+    overflow: hidden;
+    background-color: rgba(78, 77, 77, 0.64);
+    color: rgb(196, 192, 192);
+}
+.sample-item:hover{
+    cursor: pointer;
+    background-color: rgba(147, 144, 144, 0.64);
+    color: rgb(29, 29, 29);
+}
+

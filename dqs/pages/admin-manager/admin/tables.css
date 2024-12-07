@@ -1,0 +1,199 @@
+table, tr, td, th, tbody{
+    border: 1px solid var(--primary-dark);
+    font-size: 10pt;
+    color: var(--primary-dark);
+    border-collapse: collapse;
+    padding: 5px calc(var(--global-padding) - 10px);
+}
+th,td{
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+table{
+    background-color: color-mix(in srgb, var(--secondary-light) 50%, gray 90%);
+    width: 100%;
+}
+td[title],th[title]{
+    position: relative;
+    cursor: pointer;
+}
+td[title]:hover::after,
+th[title]:hover::after{
+    content: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    top: 50%;
+    left: 10%;
+    padding: 0.2rem;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1000;
+    transform: translateY(5px);
+    pointer-events: none;
+    max-width: none;
+}
+#employee-table > tbody > tr > td:last-child{
+    /* background-color: red; */
+    text-align: center;
+    padding: 0;
+}
+#employee-table > tbody > tr > td:nth-child(5){
+    /* background-color: red; */
+    text-align: center;
+    padding: 0;
+}
+.edit,
+.delete,
+.order{
+    width: 4rem;
+    height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+}
+.edit:hover,
+.delete:hover,
+.order:hover{
+    width: 4rem;
+    height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    border-radius: 7px;
+    text-decoration: none;
+}
+.edit,.order{
+    background-color: rgb(0, 0, 255);
+}
+.edit:hover,.order:hover{
+    background-color: rgb(115, 115, 227);
+}
+.delete{
+    background-color: red;
+}
+.delete:hover{
+    background-color: rgb(255, 94, 94);
+}
+#employee-table > tbody > tr > td > a{
+    width: 4rem;
+    height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    border-radius: 7px;
+    text-decoration: none;
+}
+#employee-table > tbody > tr > td > a:hover{
+    width: 4rem;
+    height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+/* ------------------inventory tables---------------- */
+/* .category{
+    border: 1px solid white;
+} */
+
+/* --------------------inventory tables -------------------- */
+
+/* --------------producst -------------- */
+.category> table > tbody > tr > td:first-child{
+    /* background-color: red; */
+    text-align: center;
+    padding: 0; 
+    max-width: 1.5rem;
+    min-width: 1.5rem;
+    /* width: 8rem; */
+}
+.category> table > tbody > tr > td:last-child{
+    /* background-color: red; */
+    text-align: center;
+    padding: 0;
+}
+.category > table > tbody > tr > td:nth-child(6){
+    /* background-color: blue; */
+    text-align: center;
+    padding: 0;
+}
+
+.category > div > h3{
+    margin-left: auto;
+}
+.add-product-on-category{
+    height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    text-decoration: none;
+
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--secondary);
+    color: var(--text-dark);
+    box-shadow: 0px 0px 10px 1px var(--hard-shadow);
+}
+.add-product-on-category:hover{
+    height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--secondary-dark);
+    color: var(--text-light);
+    cursor: pointer;
+}
+.add-new-product {
+    margin-left: auto;
+    background-color: red;
+}
+.add-new-product{
+    height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--secondary);
+    color: var(--text-dark);
+    box-shadow: 0px 0px 20px 1px var(--hard-shadow);
+}
+.add-new-product:hover{
+    height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--secondary-dark);
+    color: var(--text-light);
+}
+
+/* ----------products tool tip hover ---------------- */
+
+/* ----------products tool tip hover ---------------- */
+/* -----------products----------------- */

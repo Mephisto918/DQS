@@ -1,0 +1,343 @@
+main{
+    background-color: var(--primary);
+    padding: var(--global-padding);
+    width: 800px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--global-padding);
+}
+header > h1{
+    padding: 0 0 0 0;
+}
+#admin-info{
+    row-gap: 0rem;
+    column-gap: 0rem;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex; 
+    align-content: center;
+    justify-content: start;
+    background-color: color-mix(in srgb, var(--primary) 100%, var(--secondary) 50%);
+    box-shadow:  -3px 4px 16px -13px var(--hard-shadow);
+}
+#dp-name-wrapper{
+    display: grid;
+    grid-template: auto auto / 4rem 1fr;
+    row-gap: 0rem;
+    column-gap: 0rem;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: color-mix(in srgb, var(--primary) 100%, var(--secondary) 50%);
+    box-shadow:  -3px 4px 16px -13px var(--hard-shadow);
+}
+#dp-name-wrapper > #admin-photo > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px double var(--secondary);
+    object-fit: cover;
+    background-size: 100%;
+}
+svg{
+    border: 1px solid white;
+}
+#admin-photo{
+    grid-area: 3 / 1 / 1 / 1;
+}
+#admin-firstname{
+    margin: auto 0 0 0;
+    grid-area: 2 / 2 / 1 / 2;
+    text-shadow: -1px 2px 4px var(--hard-shadow);
+}
+#admin-lastname{
+    grid-area: 2 / 2 / 2 / 2; 
+    text-shadow: -1px 2px 4px var(--hard-shadow);
+}
+
+nav{
+   /*  border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    padding: 0 calc(var(--global-padding) - 0.6rem) calc(var(--global-padding) - 0.6rem) calc(var(--global-padding) - 0.6rem);
+}
+nav > button{
+    width: 6.2rem;
+    height: 2.2rem;
+    border-radius: 0.2rem;
+    color: var(--secondary);
+    background-color: var(--primary-dark);
+    border: 2px none var(--secondary);
+    cursor: pointer;
+
+    font-family: 'ubuntu-light';
+    font-size: 1.1rem;
+}
+nav > button:last-child{
+    margin-left: auto;
+}
+nav > button:hover{
+    width: 6.2rem;
+    height: 2.2rem;
+    border-radius: 0.2rem;
+    color: var(--text-dark);
+    background-color: var(--secondary);
+    border: 2px none var(--secondary-dark);
+    cursor: pointer;
+
+    font-family: 'ubuntu-light';
+    font-size: 1.2rem;
+}
+
+section{
+    border: 1px solid transparent;
+    border-radius: 15px;
+    height: 100%;
+    background-color: color-mix(in srgb, var(--secondary-dark) 70%, black 30%);
+    text-overflow: clip;
+    overflow-wrap: break-word;
+    box-shadow: -5px 7px 11px 1px var(--hard-shadow);
+}
+
+@keyframes slide {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-170%);
+    }
+}
+.slide{
+    animation-name: slide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+#logout-panel{
+    width: 250px;
+    height: 200px;
+
+    position: absolute;
+    bottom: 0;
+
+    background-color: color-mix(in oklch, var(--primary-dark) 0%, var(--primary-dark) 50%);
+    backdrop-filter: blur(2px);
+
+    border-radius: 10px;
+    z-index: 100;
+    padding: var(--global-padding);
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    place-content: center;
+    gap: 1rem;
+}
+#logout-panel > h1{
+    display: inline;
+    grid-column-end: -1;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+} 
+#logout-panel > a{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    color: var(--secondary);
+    height: 3rem;
+    width: 6rem;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: color-mix(in oklch, var(--secondary-dark) 0%, var(--secondary) 30%);;
+    display: grid;
+    place-content: center;
+    font-weight: 100;
+}
+#logout-panel>a:hover{
+    color: var(--secondary);
+    height: 3rem;
+    width: 6rem;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: color-mix(in oklch, var(--secondary-dark) 0%, var(--primary) 30%);;
+    display: grid;
+    place-content: center;
+    border: 2px double var(--primary);
+}
+#logout-panel > #no-logout{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    color: var(--secondary);
+    height: 3rem;
+    width: 6rem;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: color-mix(in oklch, var(--secondary-dark) 0%, var(--secondary) 30%);;
+    display: grid;
+    place-content: center;
+    font-family: 'ubuntu-regular';
+    font-size: inherit;
+    border: 1px none transparent;
+}
+#logout-panel > #no-logout:hover{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    color: var(--secondary);
+    height: 3rem;
+    width: 6rem;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: color-mix(in oklch, var(--primary-dark) 0%, var(--primary) 30%);;
+    display: grid;
+    place-content: center;
+    font-family: 'ubuntu-regular';
+    font-size: inherit;
+    border: 2px double var(--primary);
+    cursor: pointer;
+}
+
+.report-section{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.display-visible{
+    display: grid;
+    padding: var(--global-padding);
+}
+.display-none{
+    display: none;
+}
+
+#report-section, #orders-section, #inventory-section, #products-section, #employees-section{
+    padding: calc(var(--global-padding) - 10px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+
+/* -------------------add_user link------------------------------- */
+.add-user{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--secondary);
+    color: var(--text-dark);
+    text-decoration: none;
+    flex: 0 0 auto;
+    align-self: flex-end;
+    box-shadow: 0px 0px 10px 1px var(--hard-shadow);
+}
+.add-user:hover{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--secondary-dark);
+    color: var(--text-light);
+    text-decoration: none;
+    flex: 0 0 auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.edit-account{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+/* -------------------add_user link------------------------------- */
+
+/* ------------------edit --------------------------- */
+#edit > main{
+    background-color: var(--primary-dark);
+    width: 700px;
+    height: 500px;
+}
+#edit > main > form{
+    background-color: var(--primary-dark);
+    /* width: 700px; */
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+#edit > main > form > fieldset{
+    background-color: var(--primary);
+    /* width: 700px; */
+    height: 80%;
+    width: 90%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px var(--hard-shadow);
+}
+#edit > main > form > fieldset > input{
+    height: 2rem;
+    border-radius: 5px;
+    padding: 0.8rem;
+    width: 100%;
+    color: var(--text-dark);
+    box-shadow: 0px 0px 10px 1px var(--hard-shadow);
+}
+#edit > main > form > fieldset > div{
+    gap: 1rem;
+}
+#edit > main > form > fieldset > div > a{
+    background-color: white;
+    color: black;
+}
+#edit > main > form > fieldset > div > *{
+    display: block;
+    height: 2rem;
+    width: auto;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    align-self: flex-start;
+    flex: 0 0 auto;
+    box-shadow: 0px 0px 10px 1px var(--hard-shadow);
+    text-decoration: none;
+}
+#edit > main > form > fieldset > div > *:hover{
+    background-color: color-mix(in srgb, var(--primary) 50%, var(--secondary-dark) 50%);
+    color: var(--text-light);
+    box-shadow: 0px 0px 10px 1px var(--hard-shadow);
+}   
+#edit > main > form > fieldset > select{
+    height: 2rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: var(--text-dark);
+    box-shadow: 0px 0px 10px 1px var(--hard-shadow);
+}
+/* ---------------edit-------------- */
+/* ---------------------products--------------- */
+
+
+/* ---------------------products--------------- */
+/* ----------------------status----------------- */
+.status{
+    max-width: 300px;
+    background-color: var(--primary-dark);
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 1px var(--hard-shadow);
+}
+/* ----------------------status----------------- */
+

@@ -1,0 +1,62 @@
+@import url(../checkout/check.css);
+@import url(../../style.css);
+#receipt > main{
+    background-color: var(--primary);
+    border-radius: 10px;
+    height: 600px;
+    width: 410px;
+    padding: 20px;
+    font-size: 11pt;
+}
+#receipt > main > main-body2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#receipt > main > main-body2 > #receipt{
+    background-color: rgb(211, 211, 211);
+    color: rgb(35, 35, 35);
+    border-radius: 10px;
+
+    text-align: center;
+    font-family:'akazan-bk';
+
+    padding: 10px;
+    font-weight: 900;
+    width: 100%;
+    height: 75%;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+#receipt > main > main-body2 > #receipt>#items{
+    text-align: start;
+    width: 100%;
+}
+
+#receipt > main > main-body2 > #receipt>footer{
+    width: 100%;
+}
+#receipt > main > main-body2 > #receipt>footer>#vat-sec{
+    font-size: 10pt;
+}
+
+#receipt > main > main-body2 > #back-to-cart{
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+
+    font-family: 'ubuntu-light';
+    flex-grow: 1;
+}
+hr{
+    background-color: var(--secondary);
+    width: 100%;
+    border: 2px double var(--secondary);
+    margin: 10px 0px;
+}

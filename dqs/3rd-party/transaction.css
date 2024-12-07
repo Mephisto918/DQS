@@ -1,0 +1,70 @@
+
+#transaction{
+    height: 100vh;
+    position: relative;
+}
+
+#transaction > main{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 800px;
+    height: 600px;
+    padding: var(--global-padding);
+    background-color: var(--primary);
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 100px 1fr;
+    gap: 1rem;
+
+}
+
+#transaction > main > header {
+    border: 1px solid white;
+    grid-area: 1 / 2 / 1 / 1;
+}
+
+#transaction > main > section{
+    border: 1px solid white;
+    grid-area: 3 / 1 / 2 / 2;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: calc(var(--global-padding) - 0.8rem);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    border-radius: 10px;
+}
+.item{
+    background-color: color-mix(in srgb, var(--primary) 100%, white 50%);
+    color: white;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 40px;
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid white;
+    padding: calc(var(--global-padding) - 0.8rem);
+    border-radius: 5px;
+}
+.item:hover{
+    background-color: var(--primary-light);
+    cursor: pointer;
+}
+.item > h3:last-child{
+    margin-left: auto;
+}
+
+
+
+#transaction > main > aside{
+    border: 1px solid white;
+    background-color: rgba(0, 230, 0, 0.26);
+    grid-area: 1 / 2 / 3 / 3;
+}
+

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'akazan-bk';
+    src: url(./fontfiles/Akazan/Akazan\ Bk.ttf);
+}
+@font-face {
+    font-family: 'akazan-bk-italic';
+    src: url(./fontfiles/Akazan/Akazan\ Bk\ Italic.ttf);
+}
+@font-face {
+    font-family: 'akazan-bold';
+    src: url(./fontfiles/Akazan/Akazan\ Bold.ttf);
+}
+@font-face {
+    font-family: 'akazan-bold-italic';
+    src: url(./fontfiles/Akazan/Akazan\ Bold\ Italic.ttf);
+}
+@font-face {
+    font-family: 'akazan-light';
+    src: url(./fontfiles/Akazan/Akazan\ Lt.ttf);
+}
+@font-face {
+    font-family: 'akazan-light-italic';
+    src: url(./fontfiles/Akazan/Akazan\ Lt\ Italic.ttf);
+}
+@font-face {
+    font-family: 'akazan-rg';
+    src: url(./fontfiles/Akazan/Akazan\ Rg.ttf);
+}
+@font-face {
+    font-family: 'akazan-rg-italic';
+    src: url(./fontfiles/Akazan/Akazan\ Rg\ Italic.ttf);
+}
