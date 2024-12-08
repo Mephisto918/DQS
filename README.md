@@ -74,7 +74,23 @@ To delete a user:
 1. Ensure that all associated orders and delivery records are removed or updated to dissociate them from the admin/user.
 2. Since there is no `delete` button available in orders history table, it needs to be deleted manualy on the database.
 
+## Incomplete Data Analytics
 
-- This project is currently unoptimized and lacks comments in the code. It is recommended for educational purposes or as a reference point for further development.
+### Overview
+The reporting feature was intended to include charts for sales over different time spans: 1 day, 1 week, and 1 month. However, due to time constraints related to school deadlines, only the chart for a 1-day span has been partially implemented.
+
+### Current Status
+- The 1-day sales chart is present but currently non-functional; it only consists of a frame with no data visualization.
+- The charts for the 1-week and 1-month spans have not been developed.
+
+### Technology Used
+- D3.js was chosen for its powerful data visualization capabilities, but its learning curve contributed to the project's incomplete status.
+
+### Conclusion
+This section of the application is unfinished and may not provide meaningful insights at this time. Future development is needed to complete the analytics features.
+
+
+
+This project is currently unoptimized and lacks comments in the code. It is recommended for educational purposes or as a reference point for further development.
 
 
