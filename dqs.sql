@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 07, 2024 at 04:46 PM
+-- Generation Time: Dec 08, 2024 at 01:11 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -49,9 +49,7 @@ INSERT INTO `employees` (`employee_id`, `employee_firstname`, `employee_lastname
 (10, 'ジ', 'ゼル', 'Giselle', 'aespa', '', 'admin', '', 'active'),
 (21, 'Guts', 'Bersek', 'Berserk', '12345', '', 'admin', '', 'active'),
 (23, '김', '민정', 'Winter', 'aespa', '', 'admin', '', 'active'),
-(24, 'Fire', 'Ball', 'FireBall', '12345', '', 'admin', '', 'active'),
-(25, 'Dragon', 'Ball', 'Goku', '12345', '', 'admin', '', 'active'),
-(27, 'Edward', 'Camagong', 'Edward123', 'edward12345', '09455219703', 'admin', '', 'active');
+(25, 'Dragon', 'Ball', 'Goku', '12345', '', 'admin', '', 'active');
 
 --
 -- Triggers `employees`
@@ -111,22 +109,10 @@ INSERT INTO `orders` (`order_id`, `product_id`, `product_name`, `order_quantity`
 (15, 3, 'Cream O - Choco Cream-Filled Chocolate Sandwich Cookies 10 Packs', 12, 1099.56, 9, '유지민', '89093029', 'ema@com', 'yestest', 'electronic_payment', 'delivered', 'active', '2024-06-23'),
 (16, 2, 'Presto Creams - Presto Creams Choco Peanut Butter 10 Packs', 23, 1496.15, 10, 'ジゼル', '09434242', 'ema@com', 'Palompon,Brgy Leyte', 'company_account', 'delivered', 'active', '2024-06-23'),
 (17, 80, 'Orange - Orange Cream-Filled Chocolate Sandwich Cookies 10 Packs', 100, 6900.00, 9, '유지민', '093232132222', 'sample@sample.com', 'Samgyupsal, Korea', 'electronic_payment', 'delivered', 'active', '2024-07-01'),
-(18, 3, 'Cream O - Choco Cream-Filled Chocolate Sandwich Cookies 10 Packs', 100, 9200.00, 27, 'EdwardCamagong', '093232132222', 'ema@com', '1232', 'company_account', 'delivered', 'active', '2024-07-02'),
-(19, 79, 'Presto Creams - Presto Creams Peanut Butter Sandwich Cookies 10 Packs', 100, 6100.00, 27, 'EdwardCamagong', '89093029', 'ema@com', 'Palompon,Brgy Leyte', 'company_account', 'delivered', 'active', '2024-07-02'),
-(20, 27, 'Premium Corned Beef', 100, 12700.00, 27, 'EdwardCamagong', '89093029', 'ema@com', 'yestest', 'company_account', 'delivered', 'active', '2024-07-02'),
-(21, 29, 'Premium Corned Beef', 100, 7200.00, 27, 'EdwardCamagong', '89093029', 'Abc@gmail.com', 'Palompon,Brgy Leyte', 'company_account', 'delivered', 'active', '2024-07-02'),
-(22, 81, 'Bingo Vanilla - Vanilla Cream-Filled Chocolate Sandwich Cookies 10 Packs', 10, 640.00, 27, 'EdwardCamagong', '89093029', 'ema@com', 'yestest', 'company_account', 'delivered', 'active', '2024-07-02'),
 (23, 4, 'Cream O Deluxe - Vanilla Cream-Filled Chocolate Cookies with Fudgee Chocolate Topping 10 Packs', 10, 1050.00, 1, 'testtest', '89093029', 'Abc@gmail.com', 'Samgyupsal, Korea', 'company_account', 'delivered', 'active', '2024-07-02'),
-(24, 82, 'Summit Natural Drinking Water', 100, 2300.00, 27, 'EdwardCamagong', '213132123', 'Abc@gmail.com', 'Samgyupsal, Korea', 'company_account', 'delivered', 'active', '2024-07-02'),
-(25, 83, 'Summit Natural Drinking Water', 100, 1500.00, 27, 'EdwardCamagong', '213132123', 'sample@sample.com', 'Manila, Skina Japan', 'company_funds', 'delivered', 'active', '2024-07-02'),
-(26, 84, 'Absolute Pure Drinking Water', 100, 2800.00, 27, 'EdwardCamagong', '213132123', 'edward@gmail', 'Samgyupsal, Korea', 'company_account', 'delivered', 'active', '2024-07-02'),
-(27, 85, 'Absolute Pure Drinking Water', 70, 1190.00, 27, 'EdwardCamagong', '89093029', 'Abc@gmail.com', 'Samgyupsal, Korea', 'company_account', 'delivered', 'active', '2024-07-02'),
-(28, 86, 'Pringles Original', 99, 4455.00, 27, 'EdwardCamagong', '89093029', 'edward@gmail', 'Palompon,Brgy Leyte', 'company_funds', 'delivered', 'active', '2024-07-02'),
-(29, 87, 'Pringles Original', 89, 7565.00, 27, 'EdwardCamagong', '213132123', 'edward@gmail', 'Manila, Skina Japan', 'company_account', 'delivered', 'active', '2024-07-02'),
-(30, 88, 'Piattos - Cheese - Flavored Potatoe Crisps', 80, 3200.00, 27, 'EdwardCamagong', '093232132222', 'sample@sample.com', 'Samgyupsal, Korea', 'electronic_payment', 'delivered', 'active', '2024-07-02'),
 (31, 2, 'Presto Creams - Presto Creams Choco Peanut Butter 10 Packs', 23, 1495.00, 9, '유지민', '89093029', 'ema@com', 'Palompon,Brgy Leyte', 'company_account', 'delivered', 'active', '2024-07-02'),
-(32, 89, 'Sample1', 4, 928.00, 9, '유지민', '3123123123', 'edward.camagong@wlcormoc.edu.ph', 'Samgyupsal, Korea', 'company_account', 'delivered', 'active', '2024-08-28'),
-(33, 89, 'Sample1', 4, 928.00, 9, '유지민', '12312', 'ema@com', '213123', 'company_account', 'delivered', 'active', '2024-09-04');
+(32, 89, 'Sample1', 4, 928.00, 9, '유지민', '3123123123', 'edward.camagong@wlcormoc.edu.ph', 'Samgyupsal, Korea', 'company_account', 'redacted', 'active', '2024-08-28'),
+(33, 89, 'Sample1', 4, 928.00, 9, '유지민', '12312', 'ema@com', '213123', 'company_account', 'redacted', 'active', '2024-09-04');
 
 -- --------------------------------------------------------
 
@@ -154,7 +140,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_name`, `product_brand`, `product_price`, `product_weight`, `product_volume`, `product_manufacturer`, `product_category`, `product_stock`, `product_cost`, `product_photo`, `status`) VALUES
-(2, 'Presto Creams - Presto Creams Choco Peanut Butter 10 Packs', 'Jackn Jill', 65.00, 300, 0, 'Universal Robina Corporation', 'Snacks', 19, 55, 'Presto Creams - Presto Creams Choco Peanut Butter 10 Packs300.jpg', 'active'),
+(2, 'Presto Creams - Presto Creams Choco Peanut Butter 10 Packs', 'Jackn Jill', 65.00, 300, 0, 'Universal Robina Corporation', 'Snacks', 11, 55, 'Presto Creams - Presto Creams Choco Peanut Butter 10 Packs300.jpg', 'active'),
 (3, 'Cream O - Choco Cream-Filled Chocolate Sandwich Cookies 10 Packs', 'Jackn Jill', 92.00, 300, 0, 'Universal Robina Corporation', 'Snacks', 96, 78, 'Cream O - Choco Cream-Filled Chocolate Sandwich Cookies 10 Packs300.jpeg', 'active'),
 (4, 'Cream O Deluxe - Vanilla Cream-Filled Chocolate Cookies with Fudgee Chocolate Topping 10 Packs', 'Jackn Jill', 105.00, 330, 0, 'Universal Robina Corporation', 'Snacks', 5, 89, 'Cream O Deluxe - Vanilla Cream-Filled Chocolate Cookies with Fudgee Chocolate Topping 10 Packs330.png', 'active'),
 (27, 'Premium Corned Beef', 'Virginia', 127.00, 220, 0, 'Virginia Food, Inc', 'Canned Goods', 96, 108, 'Premium Corned Beef220.jpg', 'active'),
@@ -168,8 +154,7 @@ INSERT INTO `products` (`product_id`, `product_name`, `product_brand`, `product_
 (85, 'Absolute Pure Drinking Water', 'Absolute', 17.00, 0, 500, 'Asia Brewery Incorporated', 'Water', 65, 14, '', 'active'),
 (86, 'Pringles Original', 'Pringles', 45.00, 42, 0, 'Kellanova', 'Chips', 94, 38, 'Pringles Original42.jpg', 'active'),
 (87, 'Pringles Original', 'Pringles', 85.00, 107, 0, 'Kellanova', 'Chips', 85, 72, 'Pringles Original107.jpeg', 'active'),
-(88, 'Piattos - Cheese - Flavored Potatoe Crisps', 'Jackn Jill', 40.00, 15, 0, 'Universal Robina Corporation', 'Chips', 72, 34, 'Piattos Cheese - Flavored Potatoe Crisps15.jpg', 'active'),
-(89, 'Sample1', 'Sample Brand', 232.00, 23, 0, 'Sample Manu', 'Sample Category', 4, 197, 'Sample123.jpg', 'active');
+(88, 'Piattos - Cheese - Flavored Potatoe Crisps', 'Jackn Jill', 40.00, 15, 0, 'Universal Robina Corporation', 'Chips', 72, 34, 'Piattos Cheese - Flavored Potatoe Crisps15.jpg', 'active');
 
 --
 -- Triggers `products`
@@ -223,7 +208,9 @@ INSERT INTO `sales` (`sales_id`, `customer_id`, `purchase_date`, `purchase_time`
 (105, 1, '2024-08-28', '10:05:43', 7, 459.00, 'Maya'),
 (108, 1, '2024-09-04', '10:52:18', 4, 279.00, 'Grab'),
 (109, 1, '2024-10-07', '04:08:00', 6, 510.00, 'Cash'),
-(110, 2, '2024-10-07', '04:43:45', 11, 253.00, 'Coins.ph');
+(110, 2, '2024-10-07', '04:43:45', 11, 253.00, 'Coins.ph'),
+(111, 1, '2024-10-16', '06:16:36', 4, 260.00, 'Grab'),
+(112, 1, '2024-11-13', '02:24:42', 4, 260.00, 'GCash');
 
 -- --------------------------------------------------------
 
@@ -316,7 +303,9 @@ INSERT INTO `sales_details` (`sales_detail_id`, `sales_id`, `product_id`, `produ
 (164, 108, 79, 2, 61.00),
 (165, 109, 2, 3, 65.00),
 (166, 109, 4, 3, 105.00),
-(167, 110, 82, 11, 23.00);
+(167, 110, 82, 11, 23.00),
+(168, 111, 2, 4, 65.00),
+(169, 112, 2, 4, 65.00);
 
 --
 -- Indexes for dumped tables
@@ -364,7 +353,7 @@ ALTER TABLE `sales_details`
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `employee_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `employee_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -382,13 +371,13 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `sales`
 --
 ALTER TABLE `sales`
-  MODIFY `sales_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
+  MODIFY `sales_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
 
 --
 -- AUTO_INCREMENT for table `sales_details`
 --
 ALTER TABLE `sales_details`
-  MODIFY `sales_detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=168;
+  MODIFY `sales_detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=170;
 
 --
 -- Constraints for dumped tables
