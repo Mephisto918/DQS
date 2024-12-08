@@ -52,7 +52,29 @@ This project is a PHP application designed to mimic POS(Point Of Sales) systems 
 - **Override Login**: If you need to access the application as an admin, you can use the default credentials mentioned above. This will allow you to log in and manage users within the application.
 - **Hardcode***: If you cant login using the credentials provided above, you need to add an admin user in database directly via myphpAdmin page, or if a user admin exist use it instead
 
-## Important Notes
+## Known Issues and Constraints
+
+### User Deletion Constraint
+In the current implementation of the application, there is a database constraint that prevents users from being deleted under certain conditions. This issue arises from the relationships established between users, products, and orders in the database.
+
+#### Conditions Leading to the Constraint
+1. **Stock Management**: When a user adds stock for a product, this action creates dependencies in the database.
+2. **Order Processing**: Admin/Manager can place orders for products to add a stock. These orders are tracked in the system.
+3. **Pending Orders**: There is a hidden override button that allows access to a `reject/deliver` page for managing pending orders in lower right green button.
+4. **Delivery Records**: Once an order is processed (either rejected or delivered), it creates records in the history table that reference the Admin/Manager.
+
+Due to these dependencies, attempting to delete a user who has associated orders or delivery records will trigger a foreign key constraint violation, preventing deletion.
+
+#### Implications
+- Admins/Manager cannot be deleted if they have any associated records in the orders or deliveries tables.
+- This design choice ensures data integrity but may lead to confusion when trying to manage Admins/Managers.
+
+#### Workaround
+To delete a user:
+1. Ensure that all associated orders and delivery records are removed or updated to dissociate them from the admin/user.
+2. Since there is no `delete` button available in orders history table, it needs to be deleted manualy on the database.
+
+
 - This project is currently unoptimized and lacks comments in the code. It is recommended for educational purposes or as a reference point for further development.
-- If you encounter any issues, please refer to the [XAMPP documentation](https://www.apachefriends.org/docs/) for troubleshooting tips.
+
 
